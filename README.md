@@ -80,19 +80,19 @@ All containers should be up and running
 ## Jenkins
 
 Login to Jenkins with admin/admin(could be changed in docker-compose file)
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/jenkins_dashboard.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/jenkins_dashboard.png)
 By default jenkins consists of 2 jobs:
 - **BackendJob**: run Jmeter scenarios
 - **FrontendJob**: run tests with sitespeed.io and webpagetest private instance
 
 ## Running demo jmeter scenario with BackendJob
 
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/jenkins_backendjob_start_test.gif)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/jenkins_backendjob_start_test.gif)
 
 To run jmeter demo script: **Open BackendJob -> Build with Parameters -> Set build parameters -> Select scenario -> Build**
 
 This job will start jmeter docker container and execute demo_scenario.jmx jmeter scenario
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/jmeter_demo_scenario.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/jmeter_demo_scenario.png)
 
 To open demo_scenario in local instance of Jmeter please install Plugin Manager https://jmeter-plugins.org/wiki/PluginsManager/. It will automatically install all required plugins.
 
@@ -121,7 +121,7 @@ Modify your jmeter scenario to work with framework, add:
     * **eventTags** - info from testTitle field in tag format
 
     Data from these fields will be displayed in grafana dashboard annotations- Green/Red vertical lines that stands for test Start/End.
-    ![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/grafana_annotations_demo.gif)
+    ![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/grafana_annotations_demo.gif)
 - (optional) **jp@gc - Console Status Logger**
 	sends minimalistic stats to jenkins console output about test execution:
     ```
@@ -139,11 +139,11 @@ Open 'Load test monitoring' dashboard. Dashboard contains visualizations based o
 ### Available metrics
 
 Dashboard has multiple rows with different metrics
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/grafana_dashboard_available_stats.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/grafana_dashboard_available_stats.png)
 
 ### Timerange
 All values in visualizations are calculated according to selected time range. Default timerange is last 15 min with 10 sec refresh. Timerange could be set in timepicker or selected on any graph.
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/grafana_set_time_range.gif)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/grafana_set_time_range.gif)
 
 ### Templating
 Graphs and series on dashboard are displayed dynamically according to variables selected 
@@ -194,17 +194,17 @@ Failure Message: Test failed: text expected to contain /success/;
 ### Test runs comparison
 Tests comparison is done using scripted js dashboard. It could be accessed at http://127.0.0.1:8857/dashboard/script/compare_tests.js
 
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/grafana_compare_tests_demo.gif)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/grafana_compare_tests_demo.gif)
 
 
 ## FrontendJob
 To run frontend test: **Open FrontendJob -> Build with Parameters -> Set build parameters -> Build**
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/jenkins_frontendjob_run.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/jenkins_frontendjob_run.png)
 
 This job will start sitespeed.io docker container and run test with parameters using WebPageTest private instance 
 
 Frontend test deliverables:
 - **sitespeed.io HTML report**
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/jenkins_frontendjob_sitespeed_html_report.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/jenkins_frontendjob_sitespeed_html_report.png)
 - **webpagetest HTML report**
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/jenkins_frontendjob_webpagetest_html_report.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/jenkins_frontendjob_webpagetest_html_report.png)
