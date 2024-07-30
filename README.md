@@ -8,10 +8,10 @@ This framework could be used both for backend load testing with Apache Jmeter an
 * **compare** different test runs in scripted dashboard
 
 #### Dashboard demo
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/grafana_dashboard_demo.gif)
+![](https://github.com/denisg28/performance-testing-framework/docs/img/grafana_dashboard_demo.gif)
 
 #### Tests comparison
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/grafana_compare_tests_demo.png)
+![](https://github.com/denisg28/performance-testing-framework/docs/img/grafana_compare_tests_demo.png)
 
 
 
