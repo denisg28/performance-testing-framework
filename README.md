@@ -8,10 +8,10 @@ This framework could be used both for backend load testing with Apache Jmeter an
 * **compare** different test runs in scripted dashboard
 
 #### Dashboard demo
-![](https://github.com/denisg28/performance-testing-framework/docs/img/grafana_dashboard_demo.gif)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/grafana_dashboard_demo.gif)
 
 #### Tests comparison
-![](https://github.com/denisg28/performance-testing-framework/docs/img/grafana_compare_tests_demo.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/grafana_compare_tests_demo.png)
 
 
 
@@ -29,7 +29,7 @@ Framework consists of next services:
 - **Apache Jmeter**: tool for backend load testing
 
 ## Framework architecture:
-![](https://github.com/denisg28/performance-testing-framework/blob/master/docs/img/Framework%20structure.png)
+![](https://github.com/denisg28/performance-testing-framework/blob/main/docs/img/Framework%20structure.png)
 	
 ## Prerequisites
 
